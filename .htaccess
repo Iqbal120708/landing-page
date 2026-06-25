@@ -1,0 +1,4 @@
+# .htaccess
+<FilesMatch "\.(css|js|woff2|woff|jpg|webp|png)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
