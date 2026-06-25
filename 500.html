@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terjadi Kesalahan — Dapur Nusantara Catering</title>
+    <meta name="robots" content="noindex, follow" />
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <style>
+        :root {
+            --primary: #1A3C5E;
+            --accent: #E8A838;
+            --whatsapp: #25D366;
+            --off-white: #F8F7F4;
+            --text-dark: #1C1C1C;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--primary);
+            color: var(--off-white);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .error-container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 600px;
+        }
+        
+        .error-icon {
+            font-size: 80px;
+            margin-bottom: 8px;
+        }
+        
+        .error-code {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 100px;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .error-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .error-desc {
+            font-size: 17px;
+            color: rgba(248, 247, 244, 0.8);
+            margin-bottom: 28px;
+        }
+        
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-home:hover {
+            background: #D4922A;
+            color: var(--text-dark);
+        }
+        
+        .btn-wa-error {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--whatsapp);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 12px;
+            transition: background 0.2s;
+        }
+        
+        .btn-wa-error:hover {
+            background: #1DA851;
+            color: #ffffff;
+        }
+        
+        @media (max-width: 576px) {
+            .error-code {
+                font-size: 70px;
+            }
+            .error-title {
+                font-size: 24px;
+            }
+            .error-desc {
+                font-size: 15px;
+            }
+            .btn-home,
+            .btn-wa-error {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <div class="error-icon">😵</div>
+        <div class="error-code">500</div>
+        <h1 class="error-title">Terjadi Kesalahan Server</h1>
+        <p class="error-desc">
+            Maaf, terjadi kesalahan pada server kami. Tim sedang bekerja untuk memperbaikinya.
+            Silakan coba lagi beberapa saat atau hubungi kami langsung.
+        </p>
+        <div>
+            <a href="https://landingpage.iqbaljdev.my.id/" class="btn-home">
+                <i class="bi bi-house"></i> Kembali ke Beranda
+            </a>
+        </div>
+        <div>
+            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mengalami%20error%20500%20di%20website" 
+               class="btn-wa-error" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i> Laporkan via WhatsApp
+            </a>
+        </div>
+        <p style="margin-top: 24px; font-size: 14px; color: rgba(248, 247, 244, 0.4);">
+            <i class="bi bi-arrow-left"></i> Dapur Nusantara Catering
+        </p>
+    </div>
+
+</body>
+</html>
