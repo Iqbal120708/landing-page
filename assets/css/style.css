@@ -419,6 +419,39 @@ HERO
     }
 }
 
+
+.hero-section h1,
+.hero-section .hero-sub,
+.hero-section .hero-buttons,
+.hero-section .hero-stat {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: heroFadeUp 0.6s ease forwards;
+}
+
+.hero-section h1 { animation-delay: 0.1s; }
+.hero-section .hero-sub { animation-delay: 0.2s; }
+.hero-section .hero-buttons { animation-delay: 0.3s; }
+.hero-section .hero-stat { animation-delay: 0.4s; }
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section h1,
+  .hero-section .hero-sub,
+  .hero-section .hero-buttons,
+  .hero-section .hero-stat {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ============================================================
 PROMO SPESIAL
 ============================================================ */
@@ -1249,4 +1282,23 @@ RESPONSIVE — Floating WhatsApp
     .floating-wa .tooltip-wa {
         display: none;
     }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
